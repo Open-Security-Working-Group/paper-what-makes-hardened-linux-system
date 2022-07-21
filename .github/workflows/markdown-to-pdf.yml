@@ -1,0 +1,25 @@
+name: markdown to pdf
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '**.md'
+
+jobs:
+  converttopdf:
+    name: Build pdf
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v2
+      - uses: baileyjm02/markdown-to-pdf@v1.2
+        with:
+          input_dir: md
+          output_dir: pdfs
+          images_dir: md/images
+          image_import: ./images
+          build_html: false
+      - uses: actions/upload-artifact@v2
+        with:
+          name: docs
+          path: pdfs
