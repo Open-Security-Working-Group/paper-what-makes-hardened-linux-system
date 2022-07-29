@@ -1,4 +1,9 @@
 # paper-what-makes-hardened-linux-system (Latest v2 Draft)
+
+## GitHub Action
+
+Drafts in Markdown format in the 'md' directory get automatically rendered as pdf.
+
 ## Planning Outline: “what makes a hardened Linux system”
 
 Generic version - not vendor specific, will be collaborating on this with SUSE and Canonical. This version will become the basis for a RHEL-specific version developed by Red Hatters. This will also be used as the basis for the RHEL Hardening Guide and the current version of the Guide can be used to help with this document.
@@ -36,7 +41,39 @@ Infrastructure Platform (Hypervisor)
 On-Prem
 
 Disconnected (air-gapped)
+name: convert
 
+on:
+  # Triggers the workflow on push or pull request events but only for the "main" branch
+  push:
+    branches: [ "main" ]
+      
+  pull_request:
+    branches: [ "main" ]
+
+
+jobs:
+  converttopdf:
+    name: Build PDF
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: baileyjm02/markdown-to-pdf@v1
+        with:
+          input_dir: md
+          output_dir: pdf/
+          #images_dir: docs/images
+          # for example <img src="./images/file-name.png">
+          #image_import: ./images
+          # Default is true, can set to false to only get PDF files
+          build_html: false
+
+      - run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add -A
+          git commit -m "GitHub Action - Generated PDF"
+          git push
 DMZ
 
 Intranet
