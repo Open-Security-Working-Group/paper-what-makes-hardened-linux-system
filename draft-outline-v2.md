@@ -62,7 +62,7 @@ Common Criteria: [Red Hat Adds Common Criteria Certification for Red Hat Enterpr
       1. Workload
    1. Topology (past OS only concerns) - how they interact with Hybrid Solutions
 1. What a hardened Linux System does/does not do (Next to define)
-   1. What is a hardened linux?
+   1. What is a hardened Linux?
    1. Does:
       * Defaults to Secure Posture
       * Provide guidance on resiliency
@@ -89,7 +89,7 @@ Common Criteria: [Red Hat Adds Common Criteria Certification for Red Hat Enterpr
       * Manual efforts; not automated
 1. Continually Maintain
 
-# Vender Content
+# Vendor Content
 
 Describe process for vendors to create and sign their content (ex, packages, base images, etc) for Consumers to use to build their Organization base images
 
@@ -196,7 +196,7 @@ Phase 3: “Destination Zone”
 
 Build complete.
 
-So going through this in my mind, i see some things the jump right out at me as adding value to “hardenned”
+So going through this in my mind, i see some things the jump right out at me as adding value to “hardened”
 
 * Validated immutable media at the source
 * Cryptographically validated patch sources
@@ -204,8 +204,8 @@ So going through this in my mind, i see some things the jump right out at me as 
 * Automated scan and remediation content
 * Openly published compliance available to system owners
 * Deliberate, well conceived security plan
-* Compliant by Delivery, noncompliant by explicit administrative action
-* Full nonrepudiation (All those lovely audit STIGs automatically applied...)
+* Compliant by Delivery, non-compliant by explicit administrative action
+* Full non-repudiation (All those lovely audit STIGs automatically applied...)
 
 ### Consumer Organization Runtime Systems Monitoring
 
@@ -215,6 +215,6 @@ So going through this in my mind, i see some things the jump right out at me as 
 * for new static vulnerabilities (CVEs),
 * static compliance drift (ex, comparisons against STIG)
 * life intrusion events.
-* Additionally scanning Consumer Organization Base IMages at rest for static vulnerabilities and static compliance drift to mark as stale as new vulnerabilities and compliance criteria are released and old images become vulnerabile.
+* Additionally scanning Consumer Organization Base Images at rest for static vulnerabilities and static compliance drift to mark as stale as new vulnerabilities and compliance criteria are released and old images become vulnerable.
 * Continuous observability and monitoring
 
