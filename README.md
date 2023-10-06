@@ -140,7 +140,7 @@ Manual efforts; not automated
 
 ## Continually Maintain
 
-## Vender Content
+## Vendor Content
 
 Describe process for vendors to create and sign their content (ex, packages, base images, etc) for Consumers to use to build their Organization base images
 
@@ -294,7 +294,7 @@ Publish scan results to file share
 
 Build complete.
 
-So going through this in my mind, i see some things the jump right out at me as adding value to “hardenned”
+So going through this in my mind, i see some things the jump right out at me as adding value to “hardened”
 
 Validated immutable media at the source
 
@@ -324,6 +324,6 @@ static compliance drift (ex, comparisons against STIG)
 
 life intrusion events.
 
-Additionally scanning Consumer Organization Base IMages at rest for static vulnerabilities and static compliance drift to mark as stale as new vulnerabilities and compliance criteria are released and old images become vulnerabile.
+Additionally scanning Consumer Organization Base Images at rest for static vulnerabilities and static compliance drift to mark as stale as new vulnerabilities and compliance criteria are released and old images become vulnerabile.
 
 Continuous observability and monitoring *
