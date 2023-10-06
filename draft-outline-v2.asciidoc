@@ -197,7 +197,7 @@ ____
 [upperroman]
 . [#anchor-21]####Continually Maintain
 
-[#anchor-22]####Vender Content
+[#anchor-22]####Vendor Content
 
 Describe process for vendors to create and sign their content (ex,
 packages, base images, etc) for Consumers to use to build their
@@ -458,7 +458,7 @@ Phase 3: “Destination Zone”
 Build complete.
 
 So going through this in my mind, i see some things the jump right out
-at me as adding value to “hardenned”
+at me as adding value to “hardened”
 
 * Validated immutable media at the source
 * Cryptographically validated patch sources
@@ -478,7 +478,7 @@ applied…)
 * for new static vulnerabilities (CVEs),
 * static compliance drift (ex, comparisons against STIG)
 * life intrusion events.
-* Additionally scanning Consumer Organization Base IMages at rest for
+* Additionally scanning Consumer Organization Base Images at rest for
 static vulnerabilities and static compliance drift to mark as stale as
 new vulnerabilities and compliance criteria are released and old images
 become vulnerabile.
